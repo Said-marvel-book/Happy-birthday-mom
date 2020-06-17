@@ -167,4 +167,7 @@ a{
     .footer{
         height: 60px;
     }
+    html{
+        color:red;
+    }
 }
