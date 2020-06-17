@@ -13,11 +13,11 @@
     margin: 5px;
     transition: 1s;
 }
-.logo:hover{
+/* .logo:hover{
     width: 200px;
     height: 95%;
     margin: 0px;
-}
+} */
 .nach{
     margin: 15px;
 }
@@ -157,16 +157,6 @@ a{
     .menubtn{
         width: 15%;
         height: 70%; 
-    }
-    .logo:active{
-        width: 300px;
-        height: 80%;
-        margin: 5px;
-    }
-    .logo:hover{
-        width: 300px;
-        height: 80%;
-        margin: 5px; 
     }
     span{
         font-size: 55px;
