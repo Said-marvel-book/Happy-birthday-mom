@@ -4,17 +4,61 @@ var imgslide = document.querySelector(".slide");
 var nav = document.querySelector(".nav");
 var tup = document.querySelector(".tup");
 var photos =[
-    {img: "img/malikaimama.jpg", size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
-    {img: "img/mamayoung.jpg", size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
-    {img: "img/ahmedushka.jpg", size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"},
+    {size:[600, 450], text:"Детство", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Мама и Малика", transform: "rotate(0deg)"},
+    {size:[650, 500], text:"Детство", transform: "rotate(0deg)"}
 ];
 var strr = document.querySelector(".strr");
 strr.addEventListener("click", next);
 var strl = document.querySelector(".strl");
 strl.addEventListener("click", prev);
 function next(){
-    if(counter == 2){
-        imgslide.setAttribute("src", photos[0].img);
+    if(counter == 47){
+        imgslide.setAttribute("src", "img/0.jpg");
         imgslide.style.width = photos[0].size[0] + "px";
         imgslide.style.height = photos[0].size[1] + "px";
         tup.textContent = photos[0].text;
@@ -22,20 +66,19 @@ function next(){
         counter=0;
         imgslide.style.transform = photos[0].transform;
         pods.textContent = counter+1;
-        console.log(counter);
         imgslide.addEventListener("click", bolshe);
         imgslide.addEventListener("contextmenu", menshe);
         imgslide.addEventListener("mouseover", pokaz);
     }else{
-        imgslide.setAttribute("src", photos[counter+1].img);
         counter++;
+        imgslide.setAttribute("src", "img/" + counter+ ".jpg");
+        console.log(counter);
         imgslide.style.width = photos[counter].size[0] + "px";
         imgslide.style.height = photos[counter].size[1] + "px";
         tup.textContent = photos[counter].text;
         tup.style.color = photos[counter].color;
         imgslide.style.transform = photos[counter].transform;
-        pods.textContent = counter+1;
-        console.log(counter);
+        pods.textContent = counter;
         imgslide.addEventListener("click", bolshe);
         imgslide.addEventListener("contextmenu", menshe);
         imgslide.addEventListener("mouseover", pokaz);
@@ -43,7 +86,7 @@ function next(){
 }
 function prev(){
     if(counter == 0){
-        imgslide.setAttribute("src", photos[photos.length-1].img);
+        imgslide.setAttribute("src", "img/" + photos[photos.length-1]+".jpg");
         counter = photos.length-1;
         imgslide.style.width = photos[counter].size[0] + "px";
         imgslide.style.height = photos[counter].size[1] + "px";
