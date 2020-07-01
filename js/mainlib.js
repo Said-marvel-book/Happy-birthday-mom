@@ -32,7 +32,7 @@ function voti(){
     var password = document.getElementById("passwordBox");
     var passText = password.value;
     if(loginText == "The_best_mom" && passText == "durdona$1987"){
-        window.location.href = "index.html";
+        window.location.href = "main.html";
     }
     else{
         alert("Если вы не знаете пароля не пробуйте!")

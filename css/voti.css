@@ -1,32 +1,34 @@
 input{
     margin-bottom: 10px;
-    width: 175px;
-    height: 25px;
-    color: rgb(90, 209, 116);
+    width: 200px;
+    height: 35px;
+    color: #000000;
     place-self: red;
-    background-color: rgb(62, 84, 182);
+    background-color: rgb(27, 0, 148);
     font-family: Comic Sans MS;
+    font-size: 28px;
 }  
 input[type="password"]::-moz-placeholder {
-    color: #95ffb8; /* Цвет подсказывающего текста */
+    color: #0066b9; /* Цвет подсказывающего текста */
 }
-input[type="password"]::-webkit-input-placeholder { color: #95ffb8; }
-input[type="password"]:-ms-input-placeholder { color: #95ffb8; }
-input[type="password"]::-ms-input-placeholder { color: #95ffb8; }
-input[type="password"]::placeholder { color: #95ffb8; }       
+input[type="password"]::-webkit-input-placeholder { color: #0066b9; }
+input[type="password"]:-ms-input-placeholder { color: #0066b9; }
+input[type="password"]::-ms-input-placeholder { color: #0066b9; }
+input[type="password"]::placeholder { color: #0066b9; }       
 input[type="text"]::-moz-placeholder {
-    color: #95ffb8; /* Цвет подсказывающего текста */
+    color: #0066b9; /* Цвет подсказывающего текста */
 }
-input[type="text"]::-webkit-input-placeholder { color: #95ffb8; }
-input[type="text"]:-ms-input-placeholder { color: #95ffb8; }
-input[type="text"]::-ms-input-placeholder { color: #95ffb8; }
-input[type="text"]::placeholder { color: #95ffb8; }
+input[type="text"]::-webkit-input-placeholder { color: #0066b9; }
+input[type="text"]:-ms-input-placeholder { color: #0066b9; }
+input[type="text"]::-ms-input-placeholder { color: #0066b9; }
+input[type="text"]::placeholder { color: #0066b9; }
 button{
-    width: 75px;
-    height: 30px;
-    background-color: crimson;
-    color: darkkhaki;
+    width: 100px;
+    height: 45px;
+    background-color: rgb(93, 49, 255);
+    color: rgb(17, 0, 116);
     font-family: Comic Sans Ms;
+    font-size: 18px;
 }
 html{
     background-size: 100%;
