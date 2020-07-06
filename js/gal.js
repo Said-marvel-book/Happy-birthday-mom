@@ -13,7 +13,7 @@ var photos =[
     {size:[650, 450], text:"Разделим всё радость, горе и мороженое.", transform: "rotate(0deg)"},
     {size:[500, 600], text:"Джунгли над головой", transform: "rotate(0deg)"},
     {size:[450, 550], text:"Китайский храм", transform: "rotate(0deg)"},
-    {size:[350, 500], text:"Новый год, новый год<br> Гирлянда висит", transform: "rotate(0deg)"},
+    {size:[350, 500], text:"Новый год, новый год. Гирлянда висит", transform: "rotate(0deg)"},
     {size:[450, 550], text:"Сколько народу...", transform: "rotate(0deg)"},
     {size:[450, 500], text:"Мы в пути и сзади экскурсовод", transform: "rotate(0deg)"},
     {size:[400, 550], text:"Мама, Мумтоза, я и сзади статуя привидения", transform: "rotate(0deg)"},
